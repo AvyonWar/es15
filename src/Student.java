@@ -12,8 +12,8 @@ public class Student {
     }
 
     public void guessingAge() {
-        Random random = new Random(35);
-        int numRand = random.nextInt();
+        Random random = new Random();
+        int numRand = random.nextInt(35);
         System.out.println("I generated the random number " + numRand + " for student " + name);
 
         if (numRand > this.age) {
